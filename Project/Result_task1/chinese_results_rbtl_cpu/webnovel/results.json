@@ -1,0 +1,39 @@
+{
+    "test_metrics": {
+        "loss": 0.49622878711670637,
+        "accuracy": 0.844,
+        "precision": 0.9075829383886256,
+        "recall": 0.766,
+        "f1": 0.8308026030368764,
+        "auroc": 0.914256
+    },
+    "ood_results": {
+        "news": {
+            "loss": 1.4153342060744762,
+            "accuracy": 0.5205616850551655,
+            "precision": 0.5223214285714286,
+            "recall": 0.46987951807228917,
+            "f1": 0.49471458773784355,
+            "auroc": 0.5251366186187636
+        },
+        "wiki": {
+            "loss": 1.7216549590229988,
+            "accuracy": 0.47194388777555113,
+            "precision": 0.48325358851674644,
+            "recall": 0.8096192384769539,
+            "f1": 0.6052434456928839,
+            "auroc": 0.41632965329456517
+        }
+    },
+    "training_params": {
+        "human_dir": "Project/data/face2_zh_json/human/zh_unicode",
+        "generated_dir": "Project/data/face2_zh_json/generated/zh_qwen2",
+        "output_dir": "Project/output2/chinese_results",
+        "model_name": "hfl/rbtl3",
+        "batch_size": 32,
+        "num_epochs": 10,
+        "learning_rate": 2e-05,
+        "max_length": 512,
+        "warmup_ratio": 0.1
+    }
+}

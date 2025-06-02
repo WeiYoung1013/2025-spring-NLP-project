@@ -1,0 +1,24 @@
+{
+  "model_args": {
+    "hidden_sizes": [
+      1024,
+      512,
+      256
+    ]
+  },
+  "training_args": {
+    "batch_size": 64,
+    "num_epochs": 20,
+    "learning_rate": 2e-05,
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.12,
+    "output_dir": "Project/outputs\\reuter"
+  },
+  "best_metrics": {
+    "loss": 0.3098773270845413,
+    "accuracy": 0.955,
+    "precision": 0.9540816326530612,
+    "recall": 0.9765013054830287,
+    "f1": 0.9651612903225807
+  }
+}

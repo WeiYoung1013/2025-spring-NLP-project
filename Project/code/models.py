@@ -29,7 +29,7 @@ class TextDetectionModel(BertPreTrainedModel):
             nn.Linear(config.hidden_size, 512),
             nn.LayerNorm(512),
             nn.GELU(),
-            nn.Dropout(0.1),
+            nn.Dropout(0.3),
             ResidualBlock(512),
             nn.Linear(512, 256),
             nn.LayerNorm(256),
@@ -100,7 +100,7 @@ class GhostbusterModel(nn.Module):
             nn.Linear(input_size, 512),
             nn.BatchNorm1d(512),
             nn.GELU(),
-            nn.Dropout(0.1),
+            nn.Dropout(0.2),
             ResidualBlock(512),
             nn.Linear(512, 256),
             nn.BatchNorm1d(256),
@@ -109,7 +109,7 @@ class GhostbusterModel(nn.Module):
         
         # 简化的分类器
         self.classifier = nn.Sequential(
-            nn.Dropout(0.1),
+            nn.Dropout(0.3),
             nn.Linear(256, 2)
         )
         

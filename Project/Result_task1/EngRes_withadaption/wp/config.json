@@ -1,0 +1,24 @@
+{
+  "model_args": {
+    "hidden_sizes": [
+      1024,
+      512,
+      256
+    ]
+  },
+  "training_args": {
+    "batch_size": 64,
+    "num_epochs": 20,
+    "learning_rate": 2e-05,
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.12,
+    "output_dir": "Project/outputs\\wp"
+  },
+  "best_metrics": {
+    "loss": 0.2161691352725029,
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+  }
+}
